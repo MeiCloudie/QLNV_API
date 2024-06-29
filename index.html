@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Bài tập Quản Lý Người Dùng hệ thống Movie</h2>
+      <!-- Vùng form nhập dữ liệu tạo mới người dùng -->
+      <div class="nguoiDung_form mb-5">
+        <form id="QLND_form">
+          <div class="row">
+            <!-- tài khoản  -->
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Tài khoản</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="taiKhoan"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập tài khoản"
+                />
+              </div>
+            </div>
+            <!-- họ tên  -->
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Họ tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="hoTen"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập họ tên"
+                />
+              </div>
+            </div>
+            <!-- email  -->
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập email"
+                />
+              </div>
+            </div>
+            <!-- số DT  -->
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="" class="form-label">Số DT</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="soDT"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập số điện thoại"
+                />
+              </div>
+            </div>
+            <!-- mật khẩu  -->
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="" class="form-label">Mật khẩu</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="matKhau"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập mật khẩu"
+                />
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-dark">Thêm người dùng</button>
+              <button class="btn btn-primary">Cập nhật</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Vùng Table hiển thị dữ liệu người dùng có trong hệ thống -->
+      <div class="nguoiDung_table">
+        <div class="table-responsive">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Tài khoản</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Email</th>
+                <th scope="col">Số điện thoại</th>
+                <th scope="col">Loại người dùng</th>
+                <th scope="col">Hành động</th>
+              </tr>
+            </thead>
+            <tbody id="nguoiDung_tbody">
+              <!-- <tr class="">
+                <td scope="row">Item</td>
+                <td>Item</td>
+                <td>Item</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
